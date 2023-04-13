@@ -17,7 +17,6 @@ for (i = 0; i < btns.length; i++) {
     })
 }
 
-
 suma.addEventListener("click", () => {
     calculos.textContent += "+"
 })
@@ -41,8 +40,8 @@ limpiar.addEventListener("click", () => {
 })
 
 
-// aqui lo que hice fue que  que si marcaramos un numero y 3 + y otro numero
-// me mostrara en la pantalla negra Expresion mal formada.
+// aqui lo que hice fue que  que si marcaramos un ejemplo: 15+++15
+// me mostrara en la pantalla Expresion mal formada.
 result.addEventListener("click", () => {
     try{
         let respuesta = eval(calculos.textContent);
